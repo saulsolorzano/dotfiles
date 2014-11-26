@@ -1,0 +1,8 @@
+[user]
+	email = hola@saulsolorzano.com
+	name = Saúl Solórzano
+[alias]
+	st = status
+	ci = commit
+	p = "!f() { git push -u origin $1; }; f"
+	u = "!f() { git pull origin $1; }; f"

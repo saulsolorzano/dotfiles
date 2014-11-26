@@ -1,0 +1,24 @@
+# Archivos generados por SO #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+
+# Cache de sass y codekit #
+.sass-cache
+.codekit-cache
+
+# Paquetes #
+node_modules
+bower_components
+
+
+# Archivos de projecto de sublime #
+*.sublime-project
+*.sublime-workspace
