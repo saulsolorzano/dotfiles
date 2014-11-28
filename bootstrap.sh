@@ -1,6 +1,5 @@
-# Archivo copiado literalmente de Mathias Bynens
-
 #!/usr/bin/env bash
+# Archivo copiado de Mathias Bynens
 
 cd "$(dirname "${BASH_SOURCE}")";
 
