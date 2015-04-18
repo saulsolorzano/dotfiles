@@ -6,3 +6,4 @@
 	ci = commit
 	p = "!f() { git push -u origin $1; }; f"
 	u = "!f() { git pull origin $1; }; f"
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all

@@ -1,4 +1,4 @@
-# Archivos generados por SO #
+# OS generated files #
 ######################
 .DS_Store
 .DS_Store?
@@ -9,16 +9,18 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-
-# Cache de sass y codekit #
-.sass-cache
-.codekit-cache
-
-# Paquetes #
-node_modules
-bower_components
-
-
 # Archivos de projecto de sublime #
 *.sublime-project
 *.sublime-workspace
+nbproject/
+
+# cache de sass dentro del tema y la maquetación #
+.sass-cache
+
+
+# Cache de codekit #
+config.codekit
+
+# Descargas de NPM #
+node_modules
+bower_components

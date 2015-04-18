@@ -28,7 +28,7 @@ alias apache="subl /etc/apache2/httpd.conf"
 alias vhosts="subl /etc/apache2/extra/httpd-vhosts.conf"
 alias restart="sudo apachectl restart"
 alias mysqls="mysql.server start"
-alias bash="subl ~/.bash_profile"
+alias profile="subl ~/.bash_profile"
 alias so="source ~/.bash_profile"
 
 # Direcciones IP
@@ -40,3 +40,4 @@ alias localip="ipconfig getifaddr en0"
 alias wpd="wp core download"
 alias wpu="wp core update"
 alias pluginu="wp plugin update --all"
+alias cf7="wp plugin install contact-form-7 --activate"

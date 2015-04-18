@@ -7,12 +7,6 @@ function mcd () {
 	mkdir -p "$1" && cd "$1";
 }
 
-
-# Instala un plugin usando wp-cli
-function wpi () {
-	wp plugin install "$1" --activate;
-}
-
 # Decomprime archivos tar.gz
 function untar() {
 	tar -zxvf "$1";
