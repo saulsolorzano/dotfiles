@@ -4,5 +4,15 @@
 [alias]
 	st = status
 	ci = commit
+	ch = checkout
+	m = merge --no-ff
 	p = "!f() { git push -u origin $1; }; f"
 	u = "!f() { git pull origin $1; }; f"
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto

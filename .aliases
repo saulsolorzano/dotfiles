@@ -11,6 +11,7 @@ alias sites="cd ~/Code"
 # Para moverse más cómodo por carpetas
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
 alias ~="cd ~"
 alias -- -="cd -"
 
@@ -28,15 +29,10 @@ alias apache="subl /etc/apache2/httpd.conf"
 alias vhosts="subl /etc/apache2/extra/httpd-vhosts.conf"
 alias restart="sudo apachectl restart"
 alias mysqls="mysql.server start"
-alias bash="subl ~/.bash_profile"
+alias bashedit="subl ~/.bash_profile"
 alias so="source ~/.bash_profile"
 
 # Direcciones IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
-
-# Alias de wp-cli
-alias wpd="wp core download"
-alias wpu="wp core update"
-alias pluginu="wp plugin update --all"
