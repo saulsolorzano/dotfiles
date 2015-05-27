@@ -8,6 +8,7 @@
 	m = merge --no-ff
 	p = "!f() { git push -u origin $1; }; f"
 	u = "!f() { git pull origin $1; }; f"
+<<<<<<< HEAD
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 
@@ -16,3 +17,6 @@
 	diff = auto
 	interactive = auto
 	status = auto
+=======
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+>>>>>>> 70a6288ef8bb16f73445244dac5aed11e73049e8
