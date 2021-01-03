@@ -14,6 +14,9 @@ Thumbs.db
 *.sublime-workspace
 nbproject/
 
+# Archivos de proyecto de VSCODE
+.vscode/
+
 # cache de sass dentro del tema y la maquetación #
 .sass-cache
 

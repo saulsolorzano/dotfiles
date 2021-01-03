@@ -1,23 +1,10 @@
-#!/usr/bin/env bash
-# Archivo copiado de Mathias Bynens
+#!/bin/sh
+# Algunas de estas funciones están copiadas del archivo de Dries
+# https://github.com/driesvints/dotfiles/blob/main/fresh.sh
 
-cd "$(dirname "${BASH_SOURCE}")";
+echo "Configurando nuevos dotfiles"
 
-git pull origin master;
-
-function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "readme.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
-	source ~/.bash_profile;
-}
-
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	doIt;
-else
-	read -p "Esto va a sobreescribir archivos en tu directorio home. ¿Estás seguro? (s/n) " -n 1;
-	echo "";
-	if [[ $REPLY =~ ^[Ss]$ ]]; then
-		doIt;
-	fi;
-fi;
-unset doIt;
+# Elimina el .zshrc de $HOME (si existe) y crea symlinks
+# del .zshrc con el archivo en nuestros .dotfiles
+rm -rf $HOME/.zshrc
+ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
