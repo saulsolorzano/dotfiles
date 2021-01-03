@@ -5,6 +5,7 @@
 	st = status
 	ci = commit
 	ch = checkout
+	nb = checkout -b
 	m = merge --no-ff
 	p = "!f() { git push -u origin $1; }; f"
 	u = "!f() { git pull origin $1; }; f"

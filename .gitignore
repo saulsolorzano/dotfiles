@@ -9,21 +9,30 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# Archivos de projecto de sublime #
+# Archivos de editores #
+######################
 *.sublime-project
 *.sublime-workspace
 nbproject/
-
-# Archivos de proyecto de VSCODE
 .vscode/
+.idea/
 
-# cache de sass dentro del tema y la maquetación #
+# Caché de SASS #
+######################
 .sass-cache
 
-
-# Cache de codekit #
+# Caché de codekit #
+######################
 config.codekit
+config.codekit3
 
-# Descargas de NPM #
+# Carpetas extras #
+######################
 node_modules
 bower_components
+
+# Logs y bases de datos #
+######################
+*.log
+*.sql
+*.sqlite
