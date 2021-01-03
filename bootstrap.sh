@@ -8,3 +8,6 @@ echo "Configurando nuevos dotfiles"
 # del .zshrc con el archivo en nuestros .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
+# Clonamos el único plugin externo que siempre uso
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
