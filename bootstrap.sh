@@ -3,14 +3,12 @@
 # https://github.com/driesvints/dotfiles/blob/main/fresh.sh
 
 echo "Configurando nuevos dotfiles para oh-my-zsh"
-echo ""
+
 # Elimina el .zshrc de $HOME (si existe) y crea symlinks
 # del .zshrc con el archivo en nuestros .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-echo ""
-echo "Clonamos el único plugin externo que siempre uso"
-echo ""
+
 # Clonamos el único plugin externo que siempre uso
 git clone git@github.com:zsh-users/zsh-autosuggestions.git ~/.dotfiles/plugins/zsh-autosuggestions
 
