@@ -9,7 +9,8 @@ echo "Configurando nuevos dotfiles"
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-source $HOME/.zshrc
-
 # Clonamos el único plugin externo que siempre uso
-git clone git@github.com:zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone git@github.com:zsh-users/zsh-autosuggestions.git ~/.dotfiles/plugins/zsh-autosuggestions
+
+# Clonamos alias personales
+git clone git@github.com:saulsolorzano/private-aliases.git ~/.dotfiles
