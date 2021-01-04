@@ -13,6 +13,9 @@ alias artisan="php artisan"
 alias mfs="artisan migrate:fresh --seed"
 alias mf="artisan migrate:fresh"
 
+# NPM
+alias watch="npm run watch"
+alias deploy="npm run deploy"
 
 # GIT
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
