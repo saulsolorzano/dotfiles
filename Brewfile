@@ -1,8 +1,10 @@
 tap 'homebrew/cask'
 tap 'homebrew/bundle'
 tap 'shopify/shopify'
+tap 'homebrew/cask-fonts'
+tap 'sass/sass'
+tap 'homebrew/services'
 
-brew 'ngrok'
 brew 'hugo'
 brew 'mkcert'
 brew 'mysql@5.7'
