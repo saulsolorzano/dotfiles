@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo "Empezando con la configuración..."
 
 # Crear el sitio Code que uso siempre
 mkdir $HOME/Code
@@ -13,3 +14,18 @@ fi
 
 # Actualizamos homebrew
 brew update
+
+# Instalamos todas las dependencias (Ver Brewfile)
+brew tap homebrew/bundle
+brew bundle
+
+mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+
+
+# Install global Composer packages
+/usr/local/bin/composer global require laravel/installer laravel/valet
+
+# Install Laravel Valet
+$HOME/.composer/vendor/bin/valet install
+
+./bootstrap.sh
