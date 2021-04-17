@@ -12,6 +12,7 @@ alias pef="./vendor/bin/pest --filter"
 alias artisan="php artisan"
 alias mfs="artisan migrate:fresh --seed"
 alias mf="artisan migrate:fresh"
+alias sail="bash vendor/bin/sail"
 
 # NPM
 alias watch="npm run watch"
