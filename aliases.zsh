@@ -13,6 +13,8 @@ alias artisan="php artisan"
 alias mfs="artisan migrate:fresh --seed"
 alias mf="artisan migrate:fresh"
 alias sail="bash vendor/bin/sail"
+alias n_19="asdf global nodejs 19.6.0"
+alias n_14="asdf global nodejs 14.7.0 && npm run dev"
 
 # NPM
 alias watch="npm run watch"
